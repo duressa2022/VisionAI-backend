@@ -42,6 +42,13 @@ def create_prompt(objects: List[ObjectData], timestamp: str) -> str:
             Speak as if you're right beside the person, describing the world with care and imagination.
             Do not mention technical details like "confidence" or "bounding boxes".
 
+            Use simple language and focus on the scene as if you were there.
+            Describe the scene in a way that evokes emotions and paints a picture in the listener's mind.
+            This scenes are from a camera that is designed to help blind people understand their surroundings.
+            The frames are taken in real-time, so the narration should be immediate and relevant to the current moment.
+            What is given to you is a list of objects detected in the scene, along with their positions and counts in 30 second.
+            This are objects detected in each frame,therefore try to combine,consolidate and summarize the objects in the scene.
+
             Focus on what the user might experience if they could see: people walking, objects nearby, interactions between them, etc.
             Use emotionally intelligent, sensory-rich, but natural language — like a narrator for a blind friend.
 
