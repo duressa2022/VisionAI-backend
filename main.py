@@ -18,7 +18,7 @@ class ObjectData(BaseModel):
     label: str
     count: int
     confidence: float
-    positions: List[Tuple[int, int]]
+    positions: List[Tuple[float, float]]
 
 class VisionRequest(BaseModel):
     objects: List[ObjectData]
