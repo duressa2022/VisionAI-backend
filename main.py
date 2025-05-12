@@ -48,9 +48,10 @@ def create_prompt(objects: List[ObjectData], timestamp: str) -> str:
             The frames are taken in real-time, so the narration should be immediate and relevant to the current moment.
             What is given to you is a list of objects detected in the scene, along with their positions and counts in 30 second.
             This are objects detected in each frame,therefore try to combine,consolidate and summarize the objects in the scene.
-
             Focus on what the user might experience if they could see: people walking, objects nearby, interactions between them, etc.
             Use emotionally intelligent, sensory-rich, but natural language — like a narrator for a blind friend.
+
+            Assume you are in a classroom of students,and teacher,30+ students are sitting in the classroom.
 
             Here is the object data detected at {timestamp}:
 
