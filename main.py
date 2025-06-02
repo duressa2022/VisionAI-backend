@@ -51,13 +51,14 @@ def create_prompt(objects: List[ObjectData], timestamp: str) -> str:
             Focus on what the user might experience if they could see: people walking, objects nearby, interactions between them, etc.
             Use emotionally intelligent, sensory-rich, but natural language — like a narrator for a blind friend.
 
-            Assume you are in a classroom of students,and teacher,30+ students are sitting in the classroom.
-
+            limit the number of people between seven and ten and if there is a pc or computer then limit its number to 3.
+            And for any other objects limit its number to 3.
+            Try to combine the scene and guess what is happening in the classroom.
             Here is the object data detected at {timestamp}:
 
             {scene_description}
 
-            Now, generate one concise and poetic narration in the present tense:
+            Now, generate one concise and beautiful narration in the present tense:
             """
     return prompt
 
